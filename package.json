@@ -1,0 +1,30 @@
+{
+  "name": "patient-portal",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.15.0",
+    "npm": ">=10.7.0"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm --prefix=apps/frontend run start",
+    "dev": "npm --prefix=apps/frontend run dev",
+    "build": "npm --prefix=apps/frontend run build",
+    "lint-staged:frontend": "npm --prefix=apps/frontend run lint-staged",
+    "lint-staged:ui-components": "npm --prefix=libs/ui-components run lint-staged",
+    "lint-staged": "npm run lint-staged:frontend && npm run lint-staged:ui-components",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "apps/frontend",
+    "libs/*"
+  ],
+  "devDependencies": {
+    "husky": "^9.0.11"
+  }
+}
