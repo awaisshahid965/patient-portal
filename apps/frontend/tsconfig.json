@@ -13,6 +13,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "declaration": true,
+    "declarationMap": true,
     "plugins": [
       {
         "name": "next"
@@ -20,7 +22,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@patient-portal/ui-components/*": ["../../libs/ui-components/*"]
+      "@patient-portal/ui-components": ["../../libs/ui-components"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
