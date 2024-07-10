@@ -36,3 +36,4 @@ yarn-error.log*
 /apps/frontend/next-env.d.ts
 /libs/ui-components/*.tsbuildinfo
 /libs/ui-components/dist
+/libs/icons/dist
