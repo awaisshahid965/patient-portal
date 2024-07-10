@@ -25,6 +25,6 @@
       "@patient-portal/ui-components": ["../../libs/ui-components/src"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "../../libs/ui-components/src/**/*"],
   "exclude": ["node_modules"]
 }
