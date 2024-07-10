@@ -22,7 +22,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@patient-portal/ui-components": ["../../libs/ui-components"]
+      "@patient-portal/ui-components": ["../../libs/ui-components/src"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
