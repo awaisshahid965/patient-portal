@@ -14,7 +14,8 @@
     "build": "npm --prefix=apps/frontend run build",
     "lint-staged:frontend": "npm --prefix=apps/frontend run lint-staged",
     "lint-staged:ui-components": "npm --prefix=libs/ui-components run lint-staged",
-    "lint-staged": "npm run lint-staged:frontend && npm run lint-staged:ui-components",
+    "lint-staged:icons": "npm --prefix=libs/icons run lint-staged",
+    "lint-staged": "npm run lint-staged:frontend && npm run lint-staged:ui-components && npm run lint-staged:icons",
     "prepare": "husky"
   },
   "keywords": [],

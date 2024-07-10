@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Breadcrumb } from '@patient-portal/ui-components'
-import HomeFilledIcon from '@/shared/icons/home-filled.icon'
+import { HomeFilledIcon } from '@patient-portal/icons'
 
 interface AuthHeaderProps {
     screenTitle: string

@@ -22,9 +22,17 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@patient-portal/ui-components": ["../../libs/ui-components/src"]
+      "@patient-portal/ui-components": ["../../libs/ui-components/src"],
+      "@patient-portal/icons": ["../../libs/icons/src"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "../../libs/ui-components/src/**/*"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "../../libs/ui-components/src/**/*",
+    "../../libs/icons/src/**/*"
+  ],
   "exclude": ["node_modules"]
 }

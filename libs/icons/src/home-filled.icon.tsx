@@ -1,16 +1,11 @@
 import React, { FC } from 'react'
-
-interface IconProps {
-    width?: number
-    height?: number
-    fill?: string
-}
+import { IconProps } from './icon.types'
 
 const HomeFilledIcon: FC<IconProps> = ({ width = 17, height = 16, fill = '#FFFFFF' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 17 16" version="1.1">
             <title>Combined Shape</title>
-            <g id="Provider-Portal-screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Provider-Portal-screens" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g id="1-Log-In-Screen-" transform="translate(-296, -44)" fill={fill}>
                     <g id="Group-12" transform="translate(296, 42)">
                         <g id="Group-6" transform="translate(0, 2)">
