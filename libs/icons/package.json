@@ -1,5 +1,5 @@
 {
-  "name": "icons",
+  "name": "@medflow/icons",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

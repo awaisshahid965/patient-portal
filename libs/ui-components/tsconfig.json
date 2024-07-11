@@ -9,10 +9,10 @@
     "skipLibCheck": true,              // Skip type checking of declaration files
     "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
     "resolveJsonModule": true,         // Allow importing JSON modules
-    "baseUrl": ".",                    // Base directory for relative module imports
+    // "baseUrl": ".",                    // Base directory for relative module imports
     "jsx": "preserve",
     "paths": {
-      "*": ["src/*"]                    // Define path mappings for modules
+      "*": ["./src/*"]                    // Define path mappings for modules
     }
   },
   "include": [

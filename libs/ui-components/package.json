@@ -1,5 +1,5 @@
 {
-  "name": "ui-components",
+  "name": "@medflow/ui-components",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

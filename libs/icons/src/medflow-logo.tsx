@@ -31,10 +31,10 @@ const MedflowLogo: FC<IconProps> = ({ width = 211, height = 48 }) => {
                     points="-1.23332595e-15 0 43.3357855 0 43.3357855 34.1117039 -1.23332595e-15 34.1117039"
                 ></polygon>
             </defs>
-            <g id="Provider-Portal-screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Provider-Portal-screens" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g id="1-Log-In-Screen-" transform="translate(-50, -25)">
                     <g id="Group-26" filter="url(#filter-1)" transform="translate(54, 27)">
-                        <g id="MedFlow" transform="translate(57.9022, 9.6067)" fill-rule="nonzero">
+                        <g id="MedFlow" transform="translate(57.9022, 9.6067)" fillRule="nonzero">
                             <polygon
                                 id="Path"
                                 fill="#5890FF"
