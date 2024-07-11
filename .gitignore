@@ -2,6 +2,7 @@
 /node_modules
 /apps/frontend/node_modules
 /libs/ui-components/node_modules
+/libs/icons/node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
