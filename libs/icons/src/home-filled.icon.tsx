@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { IconProps } from './icon.types'
 
-const HomeFilledIcon: FC<IconProps> = ({ width = 17, height = 16, fill = '#FFFFFF' }) => {
+const HomeFilledIcon: FC<IconProps> = ({ width = 16, height = 15, fill = '#FFFFFF' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 17 16" version="1.1">
             <title>Combined Shape</title>
