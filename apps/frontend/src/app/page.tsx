@@ -1,10 +1,6 @@
-import TestComponent from '@patient-portal/ui-components/src/test'
+import Signup from '@/components/Signup/Signup'
+// import TestComponent from '@patient-portal/ui-components/src/test'
 
 export default function Home() {
-    return (
-        <div>
-            <p>App initialized.</p>
-            <TestComponent />
-        </div>
-    )
+    return <div>{<Signup />}</div>
 }
