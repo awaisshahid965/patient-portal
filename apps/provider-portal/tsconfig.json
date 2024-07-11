@@ -21,10 +21,14 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
+      "@/apps/*": ["./src/apps/*"],
+      "@/components/*": ["./src/shared/components/*"],
+      "@/types/*": ["./src/shared/types/*"],
+      "@/ui/*": ["./src/shared/ui/*"],
+      "@/icons/*": ["./src/shared/icons/*"],
+      "@/constants/*": ["./src/shared/constants/*"],
       "@medflow/ui-components": ["../../libs/ui-components/src"],
       "@medflow/icons": ["../../libs/icons/src"],
-      "@/components/*": ["./src/shared/components/*"],
     }
   },
   "include": [
