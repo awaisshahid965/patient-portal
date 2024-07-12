@@ -31,7 +31,7 @@ const Signup: FC = () => {
             </div>
             <div className="wrapper-class">
                 <div className="inner-white-bg-class">
-                    <h2 className="mb-10">Create Your Account</h2>
+                    <h2 className="3xl:mb-10 mb-6">Create Your Account</h2>
                     <div className="flex w-full items-center">
                         <div className="w-[80%] mr-6">
                             <InputField
@@ -44,7 +44,7 @@ const Signup: FC = () => {
                         </div>
                         <div className="w-[20%]">
                             <CustomButton
-                                customStyle="py-5"
+                                customStyle="3xl:py-5"
                                 label="SEARCH"
                                 variant="secondary"
                                 onClick={handleSearch}

@@ -38,7 +38,7 @@ const Login: FC = () => {
             </div>
             <div className="wrapper-class">
                 <div className="inner-white-bg-class">
-                    <h2 className="mb-10">Welcome to Your Provider Portal</h2>
+                    <h2 className="3xl:mb-10">Welcome to Your Provider Portal</h2>
                     <div className="flex">
                         <div className="max-w-[55%] w-full pl-2 border-r border-r-[#d8d8d8] pr-8 pt-8 pb-8">
                             <h3 className="display-sb primary-text-color mb-6 tracking-[1.17px] leading-6 primary-text-color text-[30px]">
@@ -49,13 +49,13 @@ const Login: FC = () => {
                                 To Register you&apos;ll need:
                             </h4>
                             <ul className="pl-4 custom-bullets">
-                                <li className="mb-3 text-lg leading-5 primary-text-color tracking-normal">
+                                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
                                     Your Organization&apos;s text ID number
                                 </li>
-                                <li className="mb-3 text-lg leading-5 primary-text-color tracking-normal">
+                                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
                                     The Provider tex IDs you&apos;d like to represent
                                 </li>
-                                <li className="mb-3 text-lg leading-5 primary-text-color tracking-normal">
+                                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
                                     Your NPI Number
                                 </li>
                             </ul>
@@ -63,11 +63,11 @@ const Login: FC = () => {
                                 You may also need:
                             </h4>
                             <ul className="pl-4 custom-bullets">
-                                <li className="mb-3 text-lg leading-5 primary-text-color tracking-normal">
+                                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
                                     A Claim from the last 3 months for the tax ID&apos;s provider
                                 </li>
 
-                                <li className="mb-3 text-lg leading-5 primary-text-color tracking-normal">
+                                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
                                     The Business asscociated agreement (BAA) date for Each Provider
                                 </li>
                             </ul>
@@ -80,17 +80,23 @@ const Login: FC = () => {
                                 />
                             </div>
                             <div className="text-center mt-10">
-                                <Link href="" className="text-anchor-color text-lg leading-5 tracking-tight underline">
+                                <Link
+                                    href=""
+                                    className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline"
+                                >
                                     Are you in existing provider?
                                 </Link>
                                 <span className="text-anchor-color px-4">|</span>
-                                <Link href="" className="text-anchor-color text-lg leading-5 tracking-tight unerline">
+                                <Link
+                                    href=""
+                                    className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight unerline"
+                                >
                                     Not an existing provider?
                                 </Link>
                             </div>
                         </div>
                         <div className="py-10 max-w-[45%] w-full pl-20 pr-3">
-                            <h3 className="display-sb primary-text-color mb-6 tracking-[1.17px] leading-6 primary-text-color text-[30px]">
+                            <h3 className="display-sb primary-text-color mb-6 tracking-[1.17px] leading-6 primary-text-color 3xl:text-[30px] text-2xl">
                                 Login
                             </h3>
                             <InputField
@@ -114,11 +120,17 @@ const Login: FC = () => {
                             />
                             <CustomButton customStyle="mt-7" label="LOG IN" variant="primary" onClick={handleLogin} />
                             <div className="text-center mt-10">
-                                <Link href="" className="text-anchor-color text-lg leading-5 tracking-tight underline">
+                                <Link
+                                    href=""
+                                    className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline"
+                                >
                                     Forgot your password?
                                 </Link>
                                 <span className="text-anchor-color px-4">|</span>
-                                <Link href="" className="text-anchor-color text-lg leading-5 tracking-tight unerline">
+                                <Link
+                                    href=""
+                                    className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight unerline"
+                                >
                                     Forgot your username?
                                 </Link>
                             </div>

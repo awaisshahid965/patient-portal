@@ -11,7 +11,7 @@ interface CustomButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const CustomButton: FC<CustomButtonProps> = ({ variant, onClick, label, customStyle = '', ...rest }) => {
     const baseStyle =
-        'w-full px-2 py-3 3xl:py-4 text-xl flex justify-center align-center text-center focus:outline-none focus:ring-2 focus:ring-opacity-50 leading-[1]'
+        'w-full px-3 py-3 3xl:py-4 3xl:text-xl text-base flex justify-center align-center text-center focus:outline-none focus:ring-2 focus:ring-opacity-50 leading-[1]'
     const variants = {
         primary: 'bg-btn-primary-bg text-white',
         secondary: 'bg-btn-secondary-bg text-white',
