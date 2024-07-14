@@ -4,6 +4,7 @@ import { CheckboxProps } from './checkbox.types'
 const CustomCheckbox: FC<CheckboxProps> = ({
     id,
     label,
+    name,
     defaultChecked,
     classes = '',
     labelClasses = '',
@@ -16,6 +17,7 @@ const CustomCheckbox: FC<CheckboxProps> = ({
         <div className={`flex items-center ${classes}`}>
             <input
                 id={inputId}
+                name={name}
                 type="checkbox"
                 defaultChecked={defaultChecked}
                 onChange={onChange}

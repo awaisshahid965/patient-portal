@@ -8,7 +8,7 @@ interface AuthHeaderProps {
 
 const AuthHeader: FC<AuthHeaderProps> = ({ screenTitle }) => {
     return (
-        <div className="bg-[#26335A] py-7 px-14 flex items-center gap-7">
+        <div className="bg-[#26335A] py-4 px-8 flex items-center gap-4">
             <MedflowLogo />
             <Breadcrumb items={[{ icon: <HomeFilledIcon />, title: '' }, { title: screenTitle }]} />
         </div>
