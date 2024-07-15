@@ -15,7 +15,7 @@ const LoginInstructions = () => {
             <h3 className="display-sb primary-text-color mb-6 tracking-[1.17px] leading-6 primary-text-color text-[30px]">
                 Register as a Verified Provider
             </h3>
-            <p className="mb-6">Creating your Account Should take about 5 mintues.</p>
+            <p className="mb-6 pg">Creating your Account Should take about 5 mintues.</p>
             <h4 className="tracking-wide text-xl leading-6 mb-2 primary-text-color display-sb">
                 To Register you&apos;ll need:
             </h4>

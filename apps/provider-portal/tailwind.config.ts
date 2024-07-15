@@ -15,8 +15,11 @@ const config: Config = {
                 'primary-text-color': '#26335a',
                 'primary-border-color': '#231f20',
                 'anchor-color': '#0278FB',
-                'btn-primary-bg': '#5890FF',
-                'btn-secondary-bg': '#26335A',
+            },
+            backgroundColor: {
+                'primary-btn': '#5890FF',
+                'secondary-btn': '#26335A',
+                // 'cancel-btn': '#D9D9D9',
             },
             boxShadow: {
                 'primary-shadow': '0px 0px 2px 0px rgba(0,0,0,0.75)',
