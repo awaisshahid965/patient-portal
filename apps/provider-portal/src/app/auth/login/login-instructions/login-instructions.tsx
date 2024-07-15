@@ -58,7 +58,7 @@ const LoginInstructions = () => {
                 <span className="text-anchor-color px-4">|</span>
                 <Link
                     href="/auth/signup"
-                    className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight unerline"
+                    className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline"
                 >
                     Not an existing provider?
                 </Link>

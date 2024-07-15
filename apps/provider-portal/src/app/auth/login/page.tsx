@@ -1,9 +1,9 @@
 'use client'
 import React, { FC, useState } from 'react'
-import Link from 'next/link'
 import AuthHeader from '@/components/auth/auth-header/auth-header'
 import LoginInstructions from './login-instructions/login-instructions'
 import { Button, ButtonVariant, Checkbox, InputField } from '@medflow/ui-components'
+import LoginForgotLinks from './login-forgot-links/login-forgot-links'
 
 const LoginPage: FC = () => {
     const [isChecked, setIsChecked] = useState(false)
@@ -58,21 +58,7 @@ const LoginPage: FC = () => {
                                 <Button classes="mt-7" variant={ButtonVariant.PRIMARY} onClick={handleLogin}>
                                     LOG IN
                                 </Button>
-                                <div className="text-center mt-10">
-                                    <Link
-                                        href="/auth/forgot-password"
-                                        className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline"
-                                    >
-                                        Forgot your password?
-                                    </Link>
-                                    <span className="text-anchor-color px-4">|</span>
-                                    <Link
-                                        href="/auth/forgot-password"
-                                        className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight unerline"
-                                    >
-                                        Forgot your username?
-                                    </Link>
-                                </div>
+                                <LoginForgotLinks />
                             </div>
                         </div>
                     </div>
