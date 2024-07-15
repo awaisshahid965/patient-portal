@@ -1,6 +1,6 @@
 import React, { FC, ButtonHTMLAttributes } from 'react'
 
-type ButtonVariant = 'primary' | 'secondary'
+type ButtonVariant = 'primary' | 'secondary' | 'cancel'
 
 interface CustomButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     variant: ButtonVariant
@@ -13,9 +13,9 @@ const CustomButton: FC<CustomButtonProps> = ({ variant, onClick, label, customSt
     const baseStyle =
         'w-full px-3 py-3 3xl:py-4 3xl:text-xl text-base flex justify-center align-center text-center focus:outline-none focus:ring-2 focus:ring-opacity-50 leading-[1]'
     const variants = {
-        primary: 'bg-btn-primary-bg text-white',
-        secondary: 'bg-btn-secondary-bg text-white',
-
+        primary: 'bg-primary-btn text-white',
+        secondary: 'bg-secondary-btn text-white',
+        cancel: 'bg-gray-400 text-white',
         // success: 'bg-green-500 text-white hover:bg-green-600 focus:ring-green-300',
         // danger: 'bg-red-500 text-white hover:bg-red-600 focus:ring-red-300',
     }
