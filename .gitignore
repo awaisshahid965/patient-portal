@@ -1,7 +1,8 @@
 # dependencies
 /node_modules
-/apps/frontend/node_modules
+/apps/provider-portal/node_modules
 /libs/ui-components/node_modules
+/libs/icons/node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
@@ -10,11 +11,11 @@
 /coverage
 
 # next.js
-/apps/frontend/.next/
-/apps/frontend/out/
+/apps/provider-portal/.next/
+/apps/provider-portal/out/
 
 # production
-/apps/frontend/build
+/apps/provider-portal/build
 
 # misc
 .DS_Store
@@ -26,13 +27,14 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-/apps/frontend/.env*.local
+/apps/provider-portal/.env*.local
 
 # vercel
-/apps/frontend/.vercel
+/apps/provider-portal/.vercel
 
 # typescript
-/apps/frontend/*.tsbuildinfo
-/apps/frontend/next-env.d.ts
+/apps/provider-portal/*.tsbuildinfo
+/apps/provider-portal/next-env.d.ts
 /libs/ui-components/*.tsbuildinfo
-/libs/ui-components/next-env.d.ts
+/libs/ui-components/dist
+/libs/icons/dist

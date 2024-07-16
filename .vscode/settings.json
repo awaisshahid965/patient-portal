@@ -1,0 +1,9 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "eslint.workingDirectories": [
+      { "directory": "apps/provider-portal", "changeProcessCWD": true },
+      { "directory": "libs/ui-components", "changeProcessCWD": true },
+      { "directory": "libs/icons", "changeProcessCWD": true }
+    ]
+}

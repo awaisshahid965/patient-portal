@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "declaration": true,
+    "declarationMap": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/apps/*": ["./src/apps/*"],
+      "@/components/*": ["./src/shared/components/*"],
+      "@/types/*": ["./src/shared/types/*"],
+      "@/ui/*": ["./src/shared/ui/*"],
+      "@/icons/*": ["./src/shared/icons/*"],
+      "@/constants/*": ["./src/shared/constants/*"],
+      "@medflow/ui-components": ["../../libs/ui-components/src"],
+      "@medflow/icons": ["../../libs/icons/src"],
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "../../libs/ui-components/src/**/*",
+    "../../libs/icons/src/**/*"
+  ],
+  "exclude": ["node_modules"]
+}

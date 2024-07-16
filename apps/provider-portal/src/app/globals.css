@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'display-regular';
+    src:
+        url('/assets/fonts/SF-Pro-Display-Regular.woff') format('woff'),
+        url('/assets/fonts/SF-Pro-Display-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'display-sb';
+    src:
+        url('/assets/fonts/SF-Pro-Display-Semibold.woff') format('woff'),
+        url('/assets/fonts/SF-Pro-Display-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+}
+
+body {
+    /* font-size: 1.6rem; */
+    font-family: 'display-regular', sans-serif;
+    color: #26335a;
+}
+
+/* utilities */
+.primary-label-color {
+    color: #26335a;
+    opacity: 60%;
+}
+.primary-text-color {
+    color: #26335a;
+}
+.sf-pro-display {
+    font-family: 'display-regular', sans-serif;
+}
+.display-sb {
+    font-family: 'display-sb', sans-serif;
+}
+.bg-body-color {
+    background-color: #f8f9fa;
+}
+.inner-white-bg {
+    background-color: #fff;
+}
+
+/*directives */
+
+.input-label-text {
+    @apply primary-label-color text-base leading-5 font-medium mb-2 sf-pro-display;
+}
+.wrapper-class {
+    @apply bg-body-color rounded-xl pt-24 px-24 pb-16 shadow-sm;
+}
+.inner-white-bg-class {
+    @apply inner-white-bg rounded-xl p-16 shadow-sm;
+}
+.h2 {
+    @apply 3xl:text-[42px] text-[32px] tracking-[1.75px] leading-7 sf-pro-display primary-text-color mb-6;
+}
+.pg {
+    @apply 3xl:text-xl text-base tracking-normal leading-6 sf-pro-display primary-text-color;
+}
+
+/* custom style */
+.custom-bullets li {
+    position: relative;
+}
+
+.custom-bullets li::before {
+    content: '•';
+    color: #979797;
+    position: absolute;
+    left: -15px;
+    font-size: 20px;
+    top: 0px;
+    line-height: 1;
+}
+.input-custom-width {
+    flex: 0 0 calc(33.33% - 11px);
+    width: calc(33.33% - 11px);
+}

@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "@medflow/provider-portal",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,10 +12,11 @@
     "lint-staged": "lint-staged"
   },
   "dependencies": {
+    "@medflow/icons": "^1.0.0",
+    "@medflow/ui-components": "^1.0.0",
     "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18",
-    "ui-components": "file:../../libs/ui-components"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -1,5 +1,5 @@
 {
-  "name": "patient-portal",
+  "name": "@medflow/portal",
   "version": "1.0.0",
   "private": true,
   "engines": {
@@ -10,21 +10,26 @@
   "main": "index.js",
   "scripts": {
     "start": "npm --prefix=apps/frontend run start",
-    "dev": "npm --prefix=apps/frontend run dev",
+    "dev": "npm --prefix=apps/provider-portal run dev",
     "build": "npm --prefix=apps/frontend run build",
-    "lint-staged:frontend": "npm --prefix=apps/frontend run lint-staged",
+    "lint-staged:frontend": "npm --prefix=apps/provider-portal run lint-staged",
     "lint-staged:ui-components": "npm --prefix=libs/ui-components run lint-staged",
-    "lint-staged": "npm run lint-staged:frontend && npm run lint-staged:ui-components",
+    "lint-staged:icons": "npm --prefix=libs/icons run lint-staged",
+    "lint-staged": "npm run lint-staged:frontend && npm run lint-staged:ui-components && npm run lint-staged:icons",
     "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "apps/frontend",
+    "apps/*",
     "libs/*"
   ],
   "devDependencies": {
     "husky": "^9.0.11"
+  },
+  "dependencies": {
+    "@medflow/icons": "^1.0.0",
+    "@medflow/ui-components": "^1.0.0"
   }
 }
