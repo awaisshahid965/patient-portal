@@ -33,7 +33,6 @@ html {
 
 body {
     /* font-size: 1.6rem; */
-    font-weight: 300;
     font-family: 'display-regular', sans-serif;
     color: #26335a;
 }
@@ -47,7 +46,7 @@ body {
     color: #26335a;
 }
 .sf-pro-display {
-    font-family: 'display', sans-serif;
+    font-family: 'display-regular', sans-serif;
 }
 .display-sb {
     font-family: 'display-sb', sans-serif;
@@ -65,15 +64,15 @@ body {
     @apply primary-label-color text-base leading-5 font-medium mb-2 sf-pro-display;
 }
 .wrapper-class {
-    @apply bg-body-color rounded-xl pt-16 px-24 pb-16;
+    @apply bg-body-color rounded-xl pt-24 px-24 pb-16 shadow-sm;
 }
 .inner-white-bg-class {
-    @apply inner-white-bg rounded-xl p-16;
+    @apply inner-white-bg rounded-xl p-16 shadow-sm;
 }
-h2 {
+.h2 {
     @apply 3xl:text-[42px] text-[32px] tracking-[1.75px] leading-7 sf-pro-display primary-text-color mb-6;
 }
-p {
+.pg {
     @apply 3xl:text-xl text-base tracking-normal leading-6 sf-pro-display primary-text-color;
 }
 

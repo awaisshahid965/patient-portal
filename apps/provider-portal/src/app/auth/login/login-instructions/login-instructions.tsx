@@ -1,13 +1,28 @@
 import React from 'react'
-import Link from 'next/link'
 import { Button, ButtonVariant } from '@medflow/ui-components'
 import { useRouter } from 'next/navigation'
+import { useModalContext, withModal } from 'src/context/modal/modal.context'
+import NotAnExistingProvider from '@/components/auth/modal/not-an-existing-provider'
+import ExistingProvider from '@/components/auth/modal/existing-provider'
 
 const LoginInstructions = () => {
     const router = useRouter()
+    const { openModal } = useModalContext()
 
     const goToSignupPage = () => {
         router.push('/auth/signup')
+    }
+
+    function handleExistingProvider() {
+        openModal({
+            children: <ExistingProvider />,
+        })
+    }
+
+    function handleNonExistingProvider() {
+        openModal({
+            children: <NotAnExistingProvider />,
+        })
     }
 
     return (
@@ -15,7 +30,7 @@ const LoginInstructions = () => {
             <h3 className="display-sb primary-text-color mb-6 tracking-[1.17px] leading-6 primary-text-color text-[30px]">
                 Register as a Verified Provider
             </h3>
-            <p className="mb-6">Creating your Account Should take about 5 mintues.</p>
+            <p className="mb-6 pg">Creating your Account Should take about 5 mintues.</p>
             <h4 className="tracking-wide text-xl leading-6 mb-2 primary-text-color display-sb">
                 To Register you&apos;ll need:
             </h4>
@@ -52,19 +67,22 @@ const LoginInstructions = () => {
                 </Button>
             </div>
             <div className="text-center mt-10">
-                <Link href="#" className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline">
-                    Are you in existing provider?
-                </Link>
-                <span className="text-anchor-color px-4">|</span>
-                <Link
-                    href="/auth/signup"
+                <span
                     className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline"
+                    onClick={handleExistingProvider}
+                >
+                    Are you in existing provider?
+                </span>
+                <span className="text-anchor-color px-4">|</span>
+                <span
+                    className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline"
+                    onClick={handleNonExistingProvider}
                 >
                     Not an existing provider?
-                </Link>
+                </span>
             </div>
         </div>
     )
 }
 
-export default LoginInstructions
+export default withModal(LoginInstructions)

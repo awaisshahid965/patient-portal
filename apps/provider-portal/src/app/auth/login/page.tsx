@@ -22,11 +22,11 @@ const LoginPage: FC = () => {
 
     return (
         <>
-            <AuthHeader screenTitle="Provider Log in" />
-            <section className="p-6">
+            <section className="">
+                <AuthHeader screenTitle="Provider Log in" />
                 <div className="wrapper-class">
                     <div className="inner-white-bg-class">
-                        <h2 className="3xl:mb-10">Welcome to Your Provider Portal</h2>
+                        <h2 className="3xl:mb-10 h2">Welcome to Your Provider Portal</h2>
                         <div className="flex">
                             <LoginInstructions />
                             <div className="py-10 max-w-[45%] w-full pl-20 pr-3">

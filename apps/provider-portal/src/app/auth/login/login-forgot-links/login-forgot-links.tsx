@@ -13,7 +13,7 @@ const LoginForgotLinks = () => {
             <span className="text-anchor-color px-4">|</span>
             <Link
                 href="/auth/forgot-password"
-                className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight unerline"
+                className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline"
             >
                 Forgot your username?
             </Link>
