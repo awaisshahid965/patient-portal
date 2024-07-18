@@ -9,9 +9,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm --prefix=apps/frontend run start",
+    "start": "npm --prefix=apps/provider-portal run start",
     "dev": "npm --prefix=apps/provider-portal run dev",
-    "build": "npm --prefix=apps/frontend run build",
+    "build": "npm --prefix=apps/provider-portal run build",
     "lint-staged:frontend": "npm --prefix=apps/provider-portal run lint-staged",
     "lint-staged:ui-components": "npm --prefix=libs/ui-components run lint-staged",
     "lint-staged:icons": "npm --prefix=libs/icons run lint-staged",
