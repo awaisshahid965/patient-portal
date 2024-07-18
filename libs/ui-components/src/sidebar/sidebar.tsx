@@ -30,9 +30,9 @@ const Sidebar = () => {
     }
 
     return (
-        <div className="py-10 px-8 bg-white shadow-sm">
+        <section className="p-8 bg-white shadow-sm">
             <MedflowLogo secondLayer="#26335a" width="180px" />
-            <ul className="mt-6">
+            <ul className="mt-6 list-none">
                 {data.map((item, index) => (
                     <li key={index} className="flex flex-col space-y-3 3xl:text-xl text-lg pb-4">
                         <div
@@ -46,7 +46,7 @@ const Sidebar = () => {
                             {item.subItems && <span className="text-base">{dropdownOpen ? '▲' : '▼'}</span>}
                         </div>
                         {item.subItems && dropdownOpen && (
-                            <ul className="ml-8 mt-2">
+                            <ul className="ml-8 mt-2 list-none">
                                 {item.subItems.map((subItem, subIndex) => (
                                     <li key={subIndex} className="text-base pb-3 last:pb-0">
                                         {subItem.name}
@@ -57,7 +57,7 @@ const Sidebar = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </section>
     )
 }
 
