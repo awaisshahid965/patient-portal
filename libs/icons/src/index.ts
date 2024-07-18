@@ -1,2 +1,6 @@
 export { default as HomeFilledIcon } from './home-filled.icon'
 export { default as MedflowLogo } from './medflow-logo'
+export { default as InboxIcon } from './inbox-icon'
+export { default as PatientIcon } from './patient-icon'
+export { default as OrderIcon } from './order-icon'
+export { default as InvoiceIcon } from './invoice-icon'
