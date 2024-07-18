@@ -7,8 +7,8 @@ const ModalContext = createContext<IModelContext>({
 })
 
 const ModalCloseIcon = () => (
-    <div className="w-14 h-14">
-        <img src="/assets/images/close-filled.png" alt="close-filled" />
+    <div className="w-10 h-10">
+        <img src="/assets/images/close-filled.png" className="object-contain focus:outline:none" alt="close-filled" />
     </div>
 )
 
