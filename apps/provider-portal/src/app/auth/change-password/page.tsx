@@ -16,7 +16,7 @@ const ResetPassword = () => {
             <section className="wrapper-class">
                 <div className="inner-white-bg-class">
                     <h2 className="3xl:mb-10 text-center h2">Enter New Password</h2>
-                    <p className="text-center 3xl:text-xl text-base pg">
+                    <p className="text-center pg">
                         To change your password, please fill in the field below. <br /> Your password must contain at
                         least 8 charactors, it must also include at least <br /> one upper case letter, one lower case
                         letter, one number and one special charater

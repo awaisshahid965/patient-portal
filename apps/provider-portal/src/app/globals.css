@@ -45,7 +45,7 @@ body {
 .primary-text-color {
     color: #26335a;
 }
-.sf-pro-display {
+.display-regular {
     font-family: 'display-regular', sans-serif;
 }
 .display-sb {
@@ -61,7 +61,7 @@ body {
 /*directives */
 
 .input-label-text {
-    @apply primary-label-color text-base leading-5 font-medium mb-2 sf-pro-display;
+    @apply primary-label-color text-base leading-5 font-medium mb-2 display-regular;
 }
 .wrapper-class {
     @apply bg-body-color rounded-xl pt-24 px-24 pb-16 shadow-sm;
@@ -69,11 +69,14 @@ body {
 .inner-white-bg-class {
     @apply inner-white-bg rounded-xl p-16 shadow-sm;
 }
+.h1 {
+    @apply 3xl:text-5xl text-4xl tracking-[1.75px] leading-7 display-sb primary-text-color;
+}
 .h2 {
-    @apply 3xl:text-[42px] text-[32px] tracking-[1.75px] leading-7 sf-pro-display primary-text-color mb-6;
+    @apply 3xl:text-[42px] text-4xl tracking-[1.75px] leading-7 display-regular primary-text-color mb-6;
 }
 .pg {
-    @apply 3xl:text-xl text-base tracking-normal leading-6 sf-pro-display primary-text-color;
+    @apply 3xl:text-xl text-lg tracking-normal leading-6 display-regular primary-text-color;
 }
 
 /* custom style */

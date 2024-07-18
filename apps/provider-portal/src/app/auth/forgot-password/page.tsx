@@ -17,7 +17,7 @@ const ForgotPasswordPage = () => {
             <div className="wrapper-class">
                 <div className="inner-white-bg-class">
                     <h2 className="3xl:mb-10 text-center h2">Forgot Your Password?</h2>
-                    <p className="text-center 3xl:text-xl text-base pg">
+                    <p className="text-center pg">
                         Enter the email address associated with your account and we&apos;ll send you a link <br /> to
                         <br />
                         reset your password.

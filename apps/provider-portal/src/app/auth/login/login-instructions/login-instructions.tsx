@@ -35,13 +35,13 @@ const LoginInstructions = () => {
                 To Register you&apos;ll need:
             </h4>
             <ul className="pl-4 custom-bullets">
-                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
+                <li className="mb-3 3xl:text-xl text-lg leading-5 primary-text-color tracking-normal">
                     Your Organization&apos;s text ID number
                 </li>
-                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
+                <li className="mb-3 3xl:text-xl text-lg leading-5 primary-text-color tracking-normal">
                     The Provider tex IDs you&apos;d like to represent
                 </li>
-                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
+                <li className="mb-3 3xl:text-xl text-lg leading-5 primary-text-color tracking-normal">
                     Your NPI Number
                 </li>
             </ul>
@@ -49,11 +49,11 @@ const LoginInstructions = () => {
                 You may also need:
             </h4>
             <ul className="pl-4 custom-bullets">
-                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
+                <li className="mb-3 3xl:text-xl text-lg leading-5 primary-text-color tracking-normal">
                     A Claim from the last 3 months for the tax ID&apos;s provider
                 </li>
 
-                <li className="mb-3 3xl:text-lg text-base leading-5 primary-text-color tracking-normal">
+                <li className="mb-3 3xl:text-xl text-lg leading-5 primary-text-color tracking-normal">
                     The Business asscociated agreement (BAA) date for Each Provider
                 </li>
             </ul>
@@ -68,14 +68,14 @@ const LoginInstructions = () => {
             </div>
             <div className="text-center mt-10">
                 <span
-                    className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline"
+                    className="text-anchor-color 3xl:text-xl text-lg leading-5 tracking-tight underline cursor-pointer"
                     onClick={handleExistingProvider}
                 >
                     Are you in existing provider?
                 </span>
-                <span className="text-anchor-color px-4">|</span>
+                <span className="text-anchor-color px-4 text-lg 3xl:text-xl">|</span>
                 <span
-                    className="text-anchor-color 3xl:text-lg text-base leading-5 tracking-tight underline"
+                    className="text-anchor-color 3xl:text-xl text-lg leading-5 tracking-tight underline cursor-pointer"
                     onClick={handleNonExistingProvider}
                 >
                     Not an existing provider?
