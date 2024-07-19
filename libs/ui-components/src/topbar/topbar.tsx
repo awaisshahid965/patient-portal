@@ -9,7 +9,7 @@ interface TopbarProps {
 }
 const Topbar: FC<TopbarProps> = ({ portalName, pageName, userName }) => {
     return (
-        <div className="p-4 py-5 flex items-center justify-between">
+        <section className="flex items-center justify-between p-5 px-10">
             <div className="flex items-center text-lg 3xl:text-xl">
                 <p className="pg mb-0">{portalName}</p>
                 <div className="inline-flex ml-6 space-x-3 items-center">
@@ -23,14 +23,14 @@ const Topbar: FC<TopbarProps> = ({ portalName, pageName, userName }) => {
                     {userName}
                 </span>
 
-                <Link href="auth/login" className="text-gray-400 text-lg 3xl:text-xl">
+                <Link href="auth/login" className="text-gray-400 text-lg 3xl:text-xl focus:outline-none">
                     Logout
                 </Link>
                 <div className="pl-4">
                     <GarageIcon />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

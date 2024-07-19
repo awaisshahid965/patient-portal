@@ -4,4 +4,5 @@ export interface IconProps {
     fill?: string
     firstLayer?: string
     secondLayer?: string
+    isOpen?: boolean
 }

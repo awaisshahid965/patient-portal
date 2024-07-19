@@ -75,6 +75,9 @@ body {
 .h2 {
     @apply 3xl:text-[42px] text-4xl tracking-[1.75px] leading-7 display-regular primary-text-color mb-6;
 }
+.h5 {
+    @apply text-[2rem] tracking-normal leading-6 display-sb primary-text-color mb-3;
+}
 .pg {
     @apply 3xl:text-xl text-lg tracking-normal leading-6 display-regular primary-text-color;
 }
@@ -96,4 +99,9 @@ body {
 .input-custom-width {
     flex: 0 0 calc(33.33% - 11px);
     width: calc(33.33% - 11px);
+}
+
+.DashboardCardWidth {
+    flex: 0 0 calc(25% - 15px);
+    width: calc(25% - 15px);
 }
