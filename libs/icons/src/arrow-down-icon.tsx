@@ -1,4 +1,4 @@
-import { IconProps } from 'icon.types'
+import { IconProps } from './icon.types'
 import React, { FC } from 'react'
 
 const ArrowDownIcon: FC<IconProps> = ({ width = '16', height = '10', isOpen }) => {

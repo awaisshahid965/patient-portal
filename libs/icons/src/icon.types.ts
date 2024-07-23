@@ -5,4 +5,5 @@ export interface IconProps {
     firstLayer?: string
     secondLayer?: string
     isOpen?: boolean
+    isDisabled?: boolean
 }

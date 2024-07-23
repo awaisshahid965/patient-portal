@@ -1,4 +1,4 @@
-import { IconProps } from 'icon.types'
+import { IconProps } from './icon.types'
 import React, { FC } from 'react'
 
 const OrderWithTickIcon: FC<IconProps> = ({ width = '58', height = '65' }) => {

@@ -1,4 +1,4 @@
-import { IconProps } from 'icon.types'
+import { IconProps } from './icon.types'
 import { FC } from 'react'
 
 const GarageIcon: FC<IconProps> = ({ width = '24', height = '24' }) => {

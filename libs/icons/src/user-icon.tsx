@@ -1,4 +1,4 @@
-import { IconProps } from 'icon.types'
+import { IconProps } from './icon.types'
 import React, { FC } from 'react'
 
 const UserIcon: FC<IconProps> = ({ width = '58', height = '65' }) => {

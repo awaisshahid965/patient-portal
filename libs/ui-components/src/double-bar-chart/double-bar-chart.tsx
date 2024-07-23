@@ -15,13 +15,21 @@ import {
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
-interface DoubleBarChartProps {
-    data1: number[]
-    data2: number[]
-    labels: string[]
+interface DataPoint {
+    label: string
+    data1: number
+    data2: number
 }
 
-const DoubleBarChart: React.FC<DoubleBarChartProps> = ({ data1, data2, labels }) => {
+interface DoubleBarChartProps {
+    data: DataPoint[]
+}
+
+const DoubleBarChart: React.FC<DoubleBarChartProps> = ({ data }) => {
+    const labels = data.map((item) => item.label)
+    const data1 = data.map((item) => item.data1)
+    const data2 = data.map((item) => item.data2)
+
     const chartData: ChartData<'bar'> = {
         labels: labels,
         datasets: [
@@ -83,7 +91,11 @@ const DoubleBarChart: React.FC<DoubleBarChartProps> = ({ data1, data2, labels })
         },
     }
 
-    return <Bar className="!w-full !h-auto" data={chartData} options={options} />
+    return (
+        <div className="">
+            <Bar data={chartData} options={options} />
+        </div>
+    )
 }
 
 export default DoubleBarChart

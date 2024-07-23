@@ -52,13 +52,13 @@ const DoughnutChart: FC<DoughnutChartProps> = ({ data, options = defaultOptions,
     }
 
     return (
-        <div className="chart-container relative">
+        <div className="chart-container relative w-full">
             {value && (
                 <p className="text-2xl text-gray-700 display-sb absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pb-7">
                     {value}
                 </p>
             )}
-            <Doughnut className="!w-full !h-auto" data={modifiedData} options={options} />
+            <Doughnut className="" data={modifiedData} options={options} />
         </div>
     )
 }

@@ -12,5 +12,6 @@ export { default as Card } from './card/card'
 export { default as DoubleBarChart } from './double-bar-chart/double-bar-chart'
 export { default as DropDownMenu } from './dropdown-menu/dropdown-menu'
 export { default as DoughnutChart } from './doughnut-chart/doughnut-chart'
+export { default as Table } from './table/table'
 // types
 export { ButtonVariant } from './button/button.types'

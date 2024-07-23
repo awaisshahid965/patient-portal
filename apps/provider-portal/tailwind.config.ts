@@ -15,6 +15,7 @@ const config: Config = {
                 'primary-text-color': '#26335a',
                 'primary-border-color': '#231f20',
                 'anchor-color': '#0278FB',
+                'primary-blue': '#5890FF',
             },
             backgroundColor: {
                 'primary-btn': '#5890FF',
